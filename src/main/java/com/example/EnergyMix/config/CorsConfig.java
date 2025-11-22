@@ -18,10 +18,9 @@ public class CorsConfig {
                         .allowedOrigins(
                                 "http://localhost",
                                 "http://localhost:5173",
-                                "http://127.0.0.1",
-                                "https://energy-mix-backend-hd15.onrender.com"
+                                "https://energy-mix-frontend-gu55.onrender.com"
                         )
-                        .allowedMethods("GET")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(false);
             }
