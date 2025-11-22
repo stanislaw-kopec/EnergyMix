@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.nio.file.OpenOption;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
@@ -46,7 +45,7 @@ public class CarbonService {
             String toS = item.get("to").asText();
 
             DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mmX").withZone(ZoneOffset.UTC);
-            
+
             Instant f = Instant.from(fmt.parse(fromS));
             Instant t = Instant.from(fmt.parse(toS));
 
