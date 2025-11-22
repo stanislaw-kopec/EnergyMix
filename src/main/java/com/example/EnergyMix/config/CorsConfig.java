@@ -19,7 +19,7 @@ public class CorsConfig {
                                 "http://localhost",
                                 "http://localhost:5173",
                                 "http://127.0.0.1",
-                                "https://MY_FRONTEND.onrender.com"
+                                "https://energy-mix-backend-hd15.onrender.com"
                         )
                         .allowedMethods("GET")
                         .allowedHeaders("*")
